@@ -226,3 +226,15 @@ section.tint { background: var(--paper-2); }
 @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
 .contact-grid .card .btn { align-self: flex-start; margin-top: 4px; }
 
+/* footer */
+footer.site { background: var(--forest); color: #cfdcd3; padding: 52px 0 40px; font-size: .92rem; }
+footer.site a { color: #fff; }
+.foot-top { display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start; }
+.foot-brand { display: flex; gap: 15px; align-items: center; }
+.foot-brand .seal { width: 56px; height: 56px; background: rgba(255,255,255,.06); }
+.foot-brand .fn { font-family: Fraunces, serif; font-size: 1.12rem; color: #fff; line-height: 1.2; }
+.foot-nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.foot-nav a { text-decoration: none; color: #cfdcd3; }
+.foot-nav a:hover { color: #fff; }
+.foot-bottom { margin-top: 36px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.14); font-size: .84rem; color: #9fb3a7; }
+
