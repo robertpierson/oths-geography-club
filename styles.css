@@ -192,3 +192,17 @@ section.tint { background: var(--paper-2); }
 .swatch.t { background: var(--teal); }
 .swatch.g { background: var(--green); }
 
+/* agenda list */
+.agenda { border-top: 1px solid var(--rule); }
+.agenda .row {
+  display: grid; grid-template-columns: 54px 200px 1fr; gap: 24px;
+  padding: 20px 0; border-bottom: 1px solid var(--rule); align-items: baseline;
+}
+.agenda .n { font-family: Fraunces, serif; font-size: 1.1rem; color: var(--clay); }
+.agenda h3 { font-size: 1.15rem; }
+.agenda p { color: var(--ink-soft); font-size: .97rem; }
+@media (max-width: 760px) {
+  .agenda .row { grid-template-columns: 40px 1fr; gap: 6px 16px; }
+  .agenda p { grid-column: 2; }
+}
+
