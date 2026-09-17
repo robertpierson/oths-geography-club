@@ -221,3 +221,8 @@ section.tint { background: var(--paper-2); }
 .person .nm { font-family: Fraunces, serif; font-size: 1.3rem; font-weight: 500; }
 .person .rl { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--moss); margin-top: 5px; font-weight: 600; }
 
+/* contact */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; }
+@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-grid .card .btn { align-self: flex-start; margin-top: 4px; }
+
