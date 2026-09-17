@@ -138,3 +138,16 @@ nav.main a.cta { white-space: nowrap; }
 .btn.outline { background: transparent; color: var(--forest); }
 .btn.outline:hover { background: var(--paper-2); }
 
+/* ---------------- facts bar ---------------- */
+.facts { background: var(--paper-2); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.facts .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+.fact { padding: 26px 24px 26px 0; border-right: 1px solid var(--rule); }
+.fact:last-child { border-right: 0; }
+.fact dt { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 5px; }
+.fact dd { margin: 0; font-family: Fraunces, serif; font-size: 1.5rem; font-weight: 500; line-height: 1.1; }
+@media (max-width: 720px) {
+  .facts .wrap { grid-template-columns: 1fr 1fr; }
+  .fact { padding: 20px 18px 20px 0; }
+  .fact:nth-child(2) { border-right: 0; }
+}
+
