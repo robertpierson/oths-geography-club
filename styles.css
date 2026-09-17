@@ -99,3 +99,13 @@ nav.main a.cta { white-space: nowrap; }
   .brand .bn { font-size: .92rem; }
 }
 
+/* ---------------- notice ---------------- */
+.notice { background: var(--forest); color: #e7efe6; }
+.notice .wrap {
+  padding-top: 13px; padding-bottom: 13px;
+  display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: baseline;
+}
+.notice .label { color: var(--green); }
+.notice p { font-size: .96rem; }
+.notice a { color: #fff; }
+
