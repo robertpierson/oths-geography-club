@@ -1,0 +1,62 @@
+:root {
+  /* earthy paper + ink, accents pulled from the club crest */
+  --paper:    #f4efe4;
+  --paper-2:  #ece5d6;
+  --card:     #fbf8f1;
+  --ink:      #17241f;
+  --ink-soft: #5b6b62;
+  --rule:     #d5cbb6;
+  --forest:   #103a2c;
+  --moss:     #2f6b4f;
+  --green:    #00b66d;
+  --teal:     #00978b;
+  --blue:     #0060ae;
+  --clay:     #b4663a;
+  --wrap:     1140px;
+  --gut:      28px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 17px/1.7 Karla, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
+img { max-width: 100%; }
+
+h1, h2, h3, h4 {
+  font-family: Fraunces, Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-variation-settings: "SOFT" 30, "WONK" 1;
+  line-height: 1.08;
+  letter-spacing: -0.012em;
+  margin: 0;
+}
+h1 { font-size: clamp(2.5rem, 5.4vw, 4.1rem); }
+h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); }
+h3 { font-size: 1.28rem; line-height: 1.25; }
+p  { margin: 0; }
+a  { color: var(--forest); }
+
+.label {
+  font-family: Karla, sans-serif;
+  font-size: .74rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--moss);
+}
+.lede { color: var(--ink-soft); font-size: 1.1rem; max-width: 60ch; }
+.rule { height: 1px; background: var(--rule); border: 0; margin: 0; }
+
+/* crest sits on a dark seal so the curved wordmark stays legible on paper */
+.seal {
+  background: radial-gradient(circle at 50% 45%, #0d2c22 0%, #071a14 100%);
+  border-radius: 50%;
+  display: grid; place-items: center;
+  flex: none;
+}
+.seal img { width: 84%; height: 84%; object-fit: contain; }
+
