@@ -131,6 +131,12 @@ nav.main a.cta { white-space: nowrap; }
 .btn:hover { background: var(--moss); border-color: var(--moss); }
 .btn.outline { background: transparent; color: var(--forest); }
 .btn.outline:hover { background: var(--paper-2); }
+/* placeholder until the real Discord / form / Instagram URLs land */
+.btn.pending {
+  background: transparent; color: var(--ink-soft);
+  border-style: dashed; border-color: var(--rule);
+  cursor: default;
+}
 
 /* ---------------- facts bar ---------------- */
 .facts { background: var(--paper-2); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
